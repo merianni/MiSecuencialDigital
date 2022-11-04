@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+html, body {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.signin {
+    min-height: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(223, 223, 223)
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+.head p {
+    margin-top: -20px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.forgot-link {
+    float: right;
+}
+.group {
+    margin: 20px 0px 20px 0px;
+}
+
+.group input {
+    width: 280px;
+    height: 35px;
+    border: 0px;
+    outline: none;
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+}
+
+.group input:hover{
+    border-bottom: 1px solid #000;
+}
+
+.group button{
+    width: 300px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: #00833e;
+    color: #fff;
+
+}
+
+.inter-logo {
+    text-align: center;
+}
+
+label {
+    font-weight: 400;
+    float: left;
+}
+
+.group button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.btn {
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 2;
+    font-size:larger;
+}
+
