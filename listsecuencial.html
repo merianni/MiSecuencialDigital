@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>SECUENCIAL DIGITAL</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="navigationMenu" id="navigationMenu" onclick="navOpenFunction()">
+                <div class="hamburger-menu"></div>
+                <div class="hamburger-menu"></div>
+                <div class="hamburger-menu"></div>
+            </div>
+            
+            <div class="logo">
+                <a href="homepage.html">
+                    <p>Secuencial Digital</p>
+                </a>
+            </div>
+            <div class="header_right">
+                <div class="user-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                  
+                
+                  <ul class="dropdown">
+                    <li class="dropdown__item">admin name</li>
+                    <li class="dropdown__item">admin id</li>
+                    <li class="dropdown__item">Logout</li>
+                  </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="navigatiList" id="navigatiList">
+                <div class="inter-logo"><img src="inter-logo.png"></div>
+                <div class="containerNavigation">
+                    <a href="homepage.html"><i class='bx bxs-dashboard'></i> Home</a>
+                    <a class="active" href="addcourse.html"><i class='bx bxs-book-add'></i>Add Course</a>
+                    
+                </div>
+                <a class="closeBtn" id="closeBtn" onclick="navCloseFunction()" href="#">&times;</a>
+            </div>
+        </nav>
+        <div class="homeContent">
+            <p>LISTA SECUENCIALES</p>
+            
+          </div>
+
+        <script src="test.js"></script>
+    </body>
+</html>
