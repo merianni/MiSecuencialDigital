@@ -261,3 +261,52 @@ button:focus {
     height: 20px;
     width: 20px;
   }
+
+  /* == css de nota aclaratoria ==*/
+
+  #form  {
+    margin:auto;
+    padding: 40px;
+    max-width: 400px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    align-items: center;
+  }
+
+  input[type=text]{
+    display:flex;
+    width: 95%;
+    box-sizing: border-box;
+    border-radius:4px;
+    border:.5px solid;
+    margin:7px 0;
+    padding:7px;
+  }
+
+  #notaAclaratoria {
+    display:flex;
+    width: 95%;
+    box-sizing: border-box;
+    border-radius:4px;
+    border:.5px solid;
+    margin:7px 0;
+    padding:7px;
+    resize:none;
+    /* == tengo que modificar el size del textarea para la nota ==*/
+  }
+
+  th {
+    color: white;
+    border: .5px solid;
+    border-radius: 4px;
+    background-color: #00833e;
+    padding: 5px;
+  }
+
+  td {
+    color: black;
+    border: .5px solid;
+    border-radius: 4px;
+    padding: 10px;
+    width: 600px;
+  }
