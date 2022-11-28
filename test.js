@@ -5,3 +5,4 @@ function navCloseFunction() {
 function navOpenFunction() {
   document.getElementById("navigationMenu");
   document.getElementById("navigatiList").style.width = "300px";}
+

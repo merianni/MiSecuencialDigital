@@ -179,13 +179,14 @@ button:focus {
 }
 
 .footer {
-  position:absolute;
+  position:fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: #ffffff;
   text-align: center;
+  
 }
 
 .inter-logo {
@@ -310,3 +311,297 @@ button:focus {
     padding: 10px;
     width: 600px;
   }
+
+
+  /* landing page */
+
+  
+
+.landing-page .card {
+  width: 960px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 50px 100px rgba(0,0,0,0.4);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 130px;
+  margin-left: 500px;
+}
+
+.landing-page .container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.landing-page .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .text {
+  margin-bottom: 50px;
+}
+
+.text h1 {
+  font-size: 44px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+}
+
+.text p {
+  color: rgb(0,0,0,0.5);
+  margin-bottom: 40px;
+  margin-top: -5px;
+}
+
+.text a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: #00833e;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+  padding: 10px 20px;
+  border: 2px solid #00833e;
+}
+
+.text a:hover, .text a:active {
+  background-color: white;
+  color: #00833e;
+}
+
+.photo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("student-laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.card-logo {
+  height: -5px;
+}
+
+
+/* formulario - add secuencial */
+
+.formulario {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.formulario .crear {
+  margin-top: 20px;
+}
+.formulario h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.formulario legend {
+  float: left;
+  margin-top: 15px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="title"],
+.formulario input[type="comment"],
+.formulario textarea,
+.formulario select
+ {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 10px;
+}
+
+.formulario button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #059247;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #55b873;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.formulario label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #55b873;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+.formulario ::placeholder {
+  color:#d6d4d4;
+}
+
+.formulario h5 {
+  font-weight: 100;
+  margin-top: 50px;
+}
+.si-log {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+/* admin page */
+
+.admin-page .cards{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.admin-page .cards h1{
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-page .cards p {
+  margin-bottom: 30px;
+  
+}
+.admin-page .services{
+  display: flex;
+  align-items: center;
+}
+.admin-page .content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+
+.admin-page .content > *{
+  flex: 1 1 100%;
+}
+.admin-page .content:hover{
+  color: white;
+}
+.admin-page .content:hover a{
+  border-color: white;
+  background: white;
+}
+.admin-page .content-1:hover{
+  border-color: #00833e;
+  background: #00833e;
+}
+.admin-page .content-1:hover a{
+  color: #00833e;
+}
+.admin-page .content-2:hover{
+  border-color: #00833e;
+  background: #00833e;
+}
+.admin-page .content-2:hover a{
+  color: #00833e;
+}
+.admin-page .content-3:hover{
+  border-color: #00833e;
+  background: #00833e;
+}
+.admin-page .content-3:hover a{
+  color: #00833e;
+}
+.admin-page .content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.admin-page .content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.admin-page .content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.admin-page .content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .admin-page .services{
+    display: flex;
+    flex-direction: column;
+  }
+}

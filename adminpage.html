@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link rel="stylesheet" href="cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />-->
-        <link rel="stylesheet" href="styles.css">
-        <title>SECUENCIAL DIGITAL</title>
-        <link rel="icon" type="image/x-icon" href="inter-title-logo.png" sizes="32x32">
-        
-        
-    </head>
-    <body>
-    
-        <header class="header">
-           
-            <div class="inter-logo" id="inter-log"><img src="inter-logo.png"></div>
 
-            <div class="logo" id="log">
-                <a href="homepage.html">
-                    <p>Secuencial Digital</p>
-                </a>
-            </div>
-            <div class="header_right">
-                <div class="user-header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                      </svg>
-                  
-                
-                  <ul class="dropdown">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>SECUENCIAL DIGITAL</title>
+    <link rel="icon" type="image/x-icon" href="inter-title-logo.png" sizes="32x32">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div><img src="Si-logo-70.png" class="si-log"></div>
+
+        <div class="logo" id="log">
+            <a href="homepage.html">
+                <p>Secuencial INTERactivo</p>
+            </a>
+        </div>
+        <div class="header_right">
+            <div class="user-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+
+
+                <ul class="dropdown">
                     <li class="dropdown__item">admin name</li>
                     <li class="dropdown__item">admin id</li>
                     <li class="dropdown__item">Logout</li>
-                  </ul>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div class="homeContent">
+        <!--Botones de admin-->
+        <div class="admin-page">
+            <div class="cards">
+                <h1>Administrador</h1>
+                <p>Bienvenido a la pagina del administrador. <br> Aqui puedes crear y ver los secuenciales disponibles al momento.</p>
+                <div class="services">
+                    <div class="content content-1">
+                        
+                        <h2>Crear</h2>
+                            
+                        <p>Aqui puedes hacer un secuencial nuevo para añadir a la lista.</p>
+                            
+                        <a href="addsecuencial.html">COMENZAR</a>
+                    </div>
+                    <div class="content content-2">
+                        <div class="icon-admin"></div>
+                        <h2>
+                            Ver</h2>
+                        <p>
+                            Aqui puedes ver la lista de secuenciales disponible al momento.</p>
+                        <a href="listasecuencial.html">lista</a>
+                    </div>
+                    <div class="content content-3">
+                        <div class="icon-admin"></div>
+                        <h2>CURSOS</h2>
+                            
+                        <p>Aqui puedes añadir un curso nuevo si el secuencial ya esta creado.</p>
+                            
+                        <a href="addcourse.html">AÑADIR</a>
+                    </div>
                 </div>
             </div>
-            
-        </header>
-
-        <!--Botones de admin-->
-        <div class="btn">
-            
-            
-            <a href="addsecuencial.html">
-
-                
-                
-                <button class="press"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="42" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16" id="psign">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                  </svg><br>Crear Secuencial</button>
-            </a>
-            <a href="listsecuencial.html">
-                <button class="press"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="42" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16" id="psign">
-                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-                  </svg><br>Lista secuenciales</button>
-            </a>
         </div>
-            
-        
+    </div>
 
-        
-        <div class="footer">
-            Inter @ 2022
-        </div>
-        <script src="test.js"></script>
-    </body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="test.js"></script>
+</body>
+<div class="footer">
+    Copyright © 2022 Universidad Interamericana de Puerto Rico, All rights reserved.
+</div>
+
 </html>

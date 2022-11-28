@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="addsec.css">
-        <title>SECUENCIAL DIGITAL</title>
+        <link rel="stylesheet" href="styles.css">
+        <title>SECUENCIAL INTERactivo</title>
     </head>
     <body>
         <header class="header">
             
-            <div class="inter-logo" id="inter-log"><img src="inter-logo.png"></div>
+            <div><img src="Si-logo-70.png" class="si-log"></div>
             
             <div class="logo">
                 <a href="adminpage.html">
-                    <p id="Sec">Secuencial Digital</p>
+                    <p id="Sec">Secuencial INTERactivo</p>
                 </a>
             </div>
             <div class="header_right">
@@ -35,37 +36,70 @@
 
         
         <div class="homeContent">
-            <p>ADD SECUENCIAL</p>
-            
-          </div>
+           <div>
 
-          <div id="formulario">
-            <form>
-                <label for="departamento">Departamento</label>
-                <input type="text" name="departamento">
-                
-                <label for="titulo">Título</label>
-                <input type="text" name="titulo">
-                
-                <label for="grado">Grado</label>
-                <input type="text" name="grado">
-                
-                <label for="code">Código</label>
-                <br>
-                <input type="number" name="code" placeholder="000">
-                <br>
-                <br>
-                <label for="date">Fecha de Inicio</label>
-                <input type="date" name="date">
+                <form class="formulario" action="listasecuencial.html" method="post">
+                    <h1 class="crear">Crear Secuencial</h1>
+                    <legend><span class="number">1</span> Informacion de Secuencial</legend>
+                    <br>
+                    <br>
+                    <label for="code">Codigo:</label>
+                    <input type="text" id="code" name="class_code" placeholder="120" required>
+                    
+                    <label for="titulo">Titulo:</label>
+                    <input type="title" id="titulo" name="class_title">
+                    
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" id="departamento" name="class_dept" placeholder="Y302" required>
+                    <label for="creditos">Creditos:</label>
+                    <input type="text" id="creditos" name="class_creds" placeholder="202">
+                    <label for="recinto">Recinto:</label>
+                    <select type="text" id="recinto" name="class_recinto" required>
+                        <optgroup label="PR">
+                            <option value="Bayamon">Bayamon</option>
+                            <option value="Aguadilla">Aguadilla</option>
+                            <option value="Arecibo">Arecibo</option>
+                            <option value="Barranquitas">Barranquitas</option>
+                            <option value="Fajardo">Fajardo</option>
+                            <option value="Guayama">Guayama</option>
+                            <option value="Metro">Metro</option>
+                            <option value="Ponce">Ponce</option>
+                            <option value="San_German">San German</option>
+                        </optgroup>
+                        <optgroup label="Escuelas">
+                            <option value="Escuela_Optometria">Escuela de Optometria</option>
+                            <option value="Escuela_Aviacion">Escuela de Aviacion</option>
+                            <option value="Facultad_Derecho">Facultad de Derecho</option>
+                        </optgroup>
+                        <optgroup label="Extranjero">
+                            <option>Orlando</option>
+                            <option>Panama</option>
+                        </optgroup>
+                    </select>
 
-                <a href="homepage.html">
-                    <button formaction="homepage.html">Submit</button>
-                </a>
-                
-                
-            </form>
-          </div>
+                    <legend><span class="number">2</span> Cuotas y Comentarios </legend>
+                    <br>
+                    <br>
+                    <label><h5>*No incluya simbolos especiales $ % #</h5></label>
 
+                    <label for="cuota">Cuotas Generales:</label>
+                    <input type="text" id="cuota" name="class_genquote" placeholder="396">
+                    
+                    
+                    
+                    <label for="cuota">Cuotas Graduacion:</label>
+                    <input type="text" id="cuota" name="class_gradquote" placeholder="100">
+
+                    <label for="comment">Comentarios:</label>
+                    <textarea id="comment" name="user_bio"></textarea>
+
+                    <button type="submit">Crear</button>
+                </form>
+
+           </div>
+        </div>
+
+          
         <script src="test.js"></script>
     </body>
 </html>
