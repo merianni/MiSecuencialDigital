@@ -47,9 +47,31 @@
             </div>
         </nav>
         <div class="homeContent">
-            <p>ADD COURSE</p>
             
-          </div>
+            <form class="formulario" action="listasecuencial.html" method="post">
+                <h1 class="crear">Crear Curso</h1>
+                <legend>Informacion de Curso</legend>
+                <br>
+                <br>
+                <label for="siglas">Siglas:</label>
+                <input type="text" id="code" name="class_siglas" placeholder="" required>
+                
+                <label for="numero">Numero:</label>
+                <input type="title" id="numero" name="class_number">
+                
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="titulo" name="class_title" placeholder="" required>
+                <label for="creditos">Creditos:</label>
+                <input type="text" id="creditos" name="class_creds" placeholder="">
+                <label for="recinto">Cardinalidad:</label>
+                <input type="text" id="creditos" name="class_creds" placeholder="">
+                <label for="recinto">Descripcion:</label>
+                <textarea id="comment" name="user_bio"></textarea>
+
+                <button type="submit">Crear</button>
+            </form>
+            
+        </div>
 
         <script src="test.js"></script>
     </body>
